@@ -105,3 +105,80 @@
     padding-right: 18%;
     color: rgb(100, 100, 100);
 }
+
+#aboutus{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutus-text{
+    display: flex;
+    position: relative;
+    width: 50%;
+    align-items: center;
+}
+
+.aboutus-text img{
+    position: absolute;
+}
+
+.aboutus-text p{
+    padding: 10%;
+    line-height: 2.5em;
+    font-family: 'Lora', arial;
+    font-weight: bolder;
+    color: rgb(80, 80, 80);
+}
+
+.members-container{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.members{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    align-items: center;
+}
+
+.members img{
+    width: 50%;
+    border-radius: 999px;
+    border: 10px solid rgb(253, 237, 200);
+}
+
+.members h1{
+    padding-top: 0.5em;
+    font-size: 0.9em;
+    font-family: 'Lora', arial;
+    font-weight: bolder;
+    color: rgb(80, 80, 80);
+}
+
+.members h2{
+    padding-top: 0.5em;
+    font-size: 0.9em;
+    font-family: 'Lora', arial;
+    font-weight: lighter;
+    color: rgb(80, 80, 80);
+}
+
+.aboutus-complement{
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+    height: 10%;
+    font-family: 'Lora', arial;
+    font-weight: lighter;
+    color: rgb(80, 80, 80);
+}
+
+.aboutus-complement img{
+    height: 100%;
+}
