@@ -182,3 +182,64 @@
 .aboutus-complement img{
     height: 100%;
 }
+
+#services{
+    flex-direction: column;
+}
+
+.service1, .service2{
+    display: flex;
+    flex-direction: row;
+    height: 42%;
+    width: 65%;
+    margin: 1.5% 0;
+    color: rgb(100, 100, 100);
+}
+
+.service1{
+    border: 3px solid #49A8B5;
+    border-left: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.service1 div{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.service1 img{
+    height: 90%;
+    padding: 1%;
+    margin-left: 2%;
+}
+
+.service1 div h1, .service2 div h1{
+    font-size: 1em;
+    font-family: 'Lora', arial;
+    font-weight: bolder;
+    margin: 2% 0 4%;
+}
+
+.service1 div p, .service2 div p{
+    font-size: 1em;
+    font-family: 'Lora', arial;
+    font-weight: lighter;
+    word-spacing: em;
+    line-height: 1.5em;
+}
+
+.service2{
+    margin-left: 35%;
+    justify-content: right;
+    border: 3px solid #F7C04F;
+    border-right: 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.service2 img{
+    height: 90%;
+    padding: 1%;
+    margin-right: 2%;
+}
