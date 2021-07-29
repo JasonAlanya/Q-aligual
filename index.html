@@ -95,11 +95,81 @@
             </div>
         </div>
     </section>
-    <section id="projects" class="seccion">
-
+    <section id="projects" class="seccion seccion-position">
+        <img src="Images/Fondo-Projects.png" alt="Imagen de fondo" />
+        <div class="projects-contenido">
+            <div class="project">
+                <img src="Images/Webinar-01.png" alt="Webinar-1" />
+                <p>
+                Webinar informativo gratuito y abierto para todo público realizado
+                el 12 de marzo de 2021. <br />Estuvo enfocado en el bullying, sus
+                consecuencias emocionales y el enfoque de prevención. <br />Con el
+                apoyo de dos ponentes profesionales en psicología. <br />Contamos
+                con más de 40 participantes entre profesores y universitarios
+                interesados.
+                </p>
+            </div>
+            <div class="project">
+                <img src="Images/Webinar-02.png" alt="Webinar-2" />
+                <p>
+                Se realizó una Escuela de Padres para la Institución Educativa Santa
+                Rosa, los días 1 y 2 de Julio mediante Zoom. <br />El tema fue la
+                "Importancia de una Relación Afectiva Sólida entre Padres e Hijos".
+                <br />Contamos con dos psicólogas especializadas en el área
+                educacional.
+                </p>
+            </div>
+        </div>
     </section>
-    <section id="help" class="seccion">
-
+    <section id="help" class="seccion seccion-position">
+        <div class="help-questions">
+            <p>
+                <img src="Images/Polygon.png" alt="Icono" />¿Querés denunciar algun
+                caso de bullying?
+            </p>
+            <p>
+                <img src="Images/Polygon.png" alt="Icono" />¿Eres víctima o te
+                encuentras envuelto en un caso de bullying?
+            </p>
+            <p>
+                <img src="Images/Polygon.png" alt="Icono" />Aquí podes completar un
+                formulario para que te podamos ayudar
+            </p>
+        </div>
+        <div class="help-form">
+            <form id="form" action="">
+                <label for="nombre">Nombre</label><br />
+                <input name="nombre" required type="text" id="nombre" /><br />
+                <label for="edad">Edad</label><br />
+                <input name="edad" required type="text" id="edad" /><br />
+                <label for="email">Correo</label><br />
+                <input name="email" required type="email" id="email" /><br />
+                <label>¿Sos víctima de bullying?</label><br />
+                <input name="victima" value="Si" type="radio" id="victima-si" />
+                <label for="victima-si">Si</label>
+                <input name="victima" value="No" type="radio" id="victima-no" />
+                <label for="victima-no">No</label>
+                <input
+                name="victima"
+                value="No lo se"
+                type="radio"
+                id="victima-nolose"
+                />
+                <label for="victima-nolose">No lo se</label><br />
+                <label for="mensaje">Cuentanos brevemente</label><br />
+                <textarea
+                name="mensaje"
+                id="mensaje"
+                required
+                cols="30"
+                rows="10"
+                ></textarea
+                ><br />
+                <button type="submit" class="btn-form">
+                <span class="btn-form-bg">Enviar Formulario</span>
+                </button>
+            </form>
+        </div>
     </section>
     <section id="contact">
 
