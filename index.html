@@ -96,7 +96,7 @@
         </div>
     </section>
     <section id="projects" class="seccion seccion-position">
-        <img src="Images/Fondo-Projects.png" alt="Imagen de fondo" />
+        <img src="Images/Fondo-Projects.png" alt="Imagen de fondo" class="projects-img"/>
         <div class="projects-contenido">
             <div class="project">
                 <img src="Images/Webinar-01.png" alt="Webinar-1" />
@@ -146,33 +146,40 @@
                 <input name="email" required type="email" id="email" /><br />
                 <label>¿Sos víctima de bullying?</label><br />
                 <input name="victima" value="Si" type="radio" id="victima-si" />
-                <label for="victima-si">Si</label>
+                <label for="victima-si" class="label-radio">Si</label>
                 <input name="victima" value="No" type="radio" id="victima-no" />
-                <label for="victima-no">No</label>
-                <input
-                name="victima"
-                value="No lo se"
-                type="radio"
-                id="victima-nolose"
-                />
-                <label for="victima-nolose">No lo se</label><br />
+                <label for="victima-no" class="label-radio">No</label>
+                <input name="victima" value="No lo se" type="radio" id="victima-nolose" />
+                <label for="victima-nolose" class="label-radio">No lo se</label><br />
                 <label for="mensaje">Cuentanos brevemente</label><br />
-                <textarea
-                name="mensaje"
-                id="mensaje"
-                required
-                cols="30"
-                rows="10"
-                ></textarea
-                ><br />
+                <textarea name="mensaje" id="mensaje" required cols="30" rows="10"></textarea><br />
                 <button type="submit" class="btn-form">
-                <span class="btn-form-bg">Enviar Formulario</span>
+                    <span class="btn-form-bg">Enviar Formulario</span>
                 </button>
             </form>
         </div>
     </section>
-    <section id="contact">
-
+    <section id="contact" class="seccion">
+        <div class="seccion-position">
+            <img src="Images/Fondo-contacto.png" alt="Imagen de Fondo" class="contact-img">
+            <div class="contact-info">
+                <p class="contact-info-p">Te invitamos a suscribirte al Newsletter donde te informaremos sobre los nuevos eventos</p>
+                <input type="email" required placeholder="Correo">
+                <button type="submit" class="btn-contact">
+                    <span class="btn-contact-bg">Suscribirme</span>
+                </button>
+            </div>
+            <div class="contact-redesSociales">
+                <div class="contact-redesSociales-links">
+                    <div class="contact-fondoGris">
+                        <a href=""><img src="Images/Facebook.svg" alt="Icono Facebook"></a>
+                        <a href=""><img src="Images/Instagram.svg" alt="Icono Instagram"></a>
+                        <a href=""><img src="Images/Whatsapp.svg" alt="Icono Whatsapp"></a>
+                        <a href=""><img src="Images/Linkedin.svg" alt="Icono Linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

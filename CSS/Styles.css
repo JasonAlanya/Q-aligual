@@ -260,8 +260,13 @@
   justify-content: center;
 }
 
+.projects-img {
+  max-width: 1440px;
+  width: 100%;
+}
+
 .project {
-  margin: 0 75px;
+  margin: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -310,6 +315,7 @@
   left: 954px;
 }
 
+.contact-info input[type="text"],
 .help-form input[type="text"],
 input[type="email"],
 textarea {
@@ -322,16 +328,34 @@ textarea {
   font-weight: bold;
   font-size: 18px;
   color: black;
+  cursor: pointer;
 }
 
 .help-form input[type="radio"] {
-  margin-bottom: 10px;
-  border: none;
-  border: 2px solid #f7c04f;
+  display: none;
 }
 
-.help-form input[type="radio"] {
-  margin: 20px 20px 30px;
+.help-form input[type="radio"]:checked + .label-radio::before {
+  background: rgba(73, 168, 181, 0.6);
+}
+
+.label-radio {
+  padding: 15px 15px 15px 50px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.label-radio::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: none;
+  border: 3px solid #f7c04f;
+  border-radius: 50%;
+  position: absolute;
+  left: 17px;
 }
 
 .help-form label {
@@ -342,7 +366,8 @@ textarea {
   color: #cccccc;
 }
 
-.btn-form {
+.btn-form,
+.btn-contact {
   width: 239px;
   height: 64px;
   margin: 0 auto;
@@ -358,7 +383,8 @@ textarea {
   text-align: center;
 }
 
-.btn-form-bg {
+.btn-form-bg,
+.btn-contact-bg {
   width: 229px;
   height: 44px;
   margin: 5px;
@@ -369,4 +395,81 @@ textarea {
   font-weight: bold;
   font-size: 24px;
   color: rgba(0, 0, 0, 0.53);
+  cursor: pointer;
+}
+
+.contact-img {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.contact-info {
+  position: absolute;
+  z-index: 10;
+  top: 125px;
+  left: calc((100% - 563px) / 2);
+  width: 563px;
+  height: 289px;
+}
+
+.contact-info-p {
+  height: 120px;
+  margin-bottom: 27px;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.53);
+}
+
+.contact-info input {
+  height: 45px;
+}
+
+.contact-info input::placeholder {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: #cccccc;
+}
+
+.btn-contact {
+  margin-top: 23px;
+}
+
+.contact-redesSociales {
+  width: 100%;
+  position: absolute;
+  bottom: 160px;
+  left: calc(100% - 464px);
+}
+.contact-redesSociales-links {
+  width: 464px;
+  height: 67px;
+  border-radius: 20px 0px 0px 20px;
+  background: linear-gradient(
+    to right,
+    rgba(73, 168, 181, 1),
+    rgba(247, 192, 79, 1)
+  );
+  display: flex;
+  align-items: center;
+}
+.contact-fondoGris {
+  width: 461px;
+  height: 61px;
+  margin: 3px 0 3px 3px;
+  border-radius: 20px 0px 0px 20px;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-redesSociales-links a,
+.contact-redesSociales-links img {
+  width: 55px;
+  height: 55px;
 }
