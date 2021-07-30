@@ -121,7 +121,7 @@
         </div>
     </section>
     <section id="help" class="seccion seccion-position">
-        <div class="help-questions">
+        <div class="help-questions help">
             <p>
                 <img src="Images/Polygon.png" alt="Icono" /> ¿Querés denunciar algun
                 caso de bullying?
@@ -151,32 +151,44 @@
                 <input name="victima" value="No lo se" type="radio" id="victima-nolose" />
                 <label for="victima-nolose" class="label-radio">No lo se</label><br />
                 <label for="mensaje">Cuentanos brevemente</label><br />
-                <textarea name="mensaje" id="mensaje" required cols="30" rows="10"></textarea><br />
-                <button type="submit" class="btn-form">
+                <textarea name="mensaje" id="mensaje" required cols="30" rows="8"></textarea><br />
+                <button type="submit" class="btn-form" id="btn-form-help">
                     <span class="btn-form-bg">Enviar Formulario</span>
                 </button>
             </form>
         </div>
+        <div class="help-modal display-modal">
+            <div>
+                <span id="btn-form-help-close">X</span>
+                <p>Gracias por confiar en nosotros. Nos comunicaremos contigo lo más pronto posible.</p>
+            </div>
+        </div>
     </section>
     <section id="contact" class="seccion">
-        <div class="seccion-position">
+        <div class="seccion-position contact">
             <img src="Images/Fondo-contacto.png" alt="Imagen de Fondo" class="contact-img">
             <div class="contact-info">
                 <p class="contact-info-p">Te invitamos a suscribirte al Newsletter donde te informaremos sobre los nuevos eventos</p>
                 <input type="email" required placeholder="Correo">
-                <button type="submit" class="btn-contact">
+                <button type="button" class="btn-contact" id="btn-suscribe">
                     <span class="btn-contact-bg">Suscribirme</span>
                 </button>
             </div>
             <div class="contact-redesSociales">
                 <div class="contact-redesSociales-links">
                     <div class="contact-fondoGris">
-                        <a href=""><img src="Images/Facebook.svg" alt="Icono Facebook"></a>
-                        <a href=""><img src="Images/Instagram.svg" alt="Icono Instagram"></a>
+                        <a href="https://www.facebook.com/Qaligual"><img src="Images/Facebook.svg" alt="Icono Facebook"></a>
+                        <a href="https://www.instagram.com/qaligual/?hl=es-la"><img src="Images/Instagram.svg" alt="Icono Instagram"></a>
                         <a href=""><img src="Images/Whatsapp.svg" alt="Icono Whatsapp"></a>
                         <a href=""><img src="Images/Linkedin.svg" alt="Icono Linkedin"></a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="suscribe-modal display-modal">
+            <div>
+                <span id="btn-suscribe-close">X</span>
+                <p>Gracias por confiar en nosotros. También puedes contactarnos en nuestras redes o por Whatsapp.</p>
             </div>
         </div>
     </section>
