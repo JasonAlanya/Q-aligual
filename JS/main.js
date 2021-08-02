@@ -1,4 +1,6 @@
 // MANEJO DE NAVBAR
+progreso();
+
 window.addEventListener("scroll", function () {
   progreso();
 });
