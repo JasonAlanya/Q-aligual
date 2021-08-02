@@ -35,7 +35,8 @@ let botonSuscribeCerrar = document.querySelector("#btn-suscribe-close");
 let modalFormulario = document.querySelector(".help-modal");
 let modalSuscribe = document.querySelector(".suscribe-modal");
 
-botonFormulario.addEventListener("click", () => {
+botonFormulario.addEventListener("click", (event) => {
+  event.preventDefault();
   modalFormulario.classList.remove("display-modal");
 });
 botonFormularioCerrar.addEventListener("click", () => {
