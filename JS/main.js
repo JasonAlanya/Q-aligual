@@ -37,12 +37,31 @@ let modalSuscribe = document.querySelector(".suscribe-modal");
 
 botonFormulario.addEventListener("click", (event) => {
   event.preventDefault();
+
+  let nombre=document.querySelector("#nombre");
+  let edad=document.querySelector("#edad");
+  let email=document.querySelector("#email");
+  let radiosi=document.querySelector("#victima-si");
+  let radiono=document.querySelector("#victima-no");
+  let radionose=document.querySelector("#victima-nolose");
+  let mensaje=document.querySelector("#mensaje");
+
+  nombre.value="";
+  edad.value="";
+  email.value="";
+  radiosi.checked=false;
+  radiono.checked=false;
+  radionose.checked=false;
+  mensaje.value="";
+
   modalFormulario.classList.remove("display-modal");
+  //document.querySelector(".contact").classList.add("opacity");
 });
 botonFormularioCerrar.addEventListener("click", () => {
   modalFormulario.classList.add("display-modal");
 });
-botonSuscribe.addEventListener("click", () => {
+botonSuscribe.addEventListener("click", (event) => {
+  event.preventDefault();
   modalSuscribe.classList.remove("display-modal");
   document.querySelector(".contact").classList.add("opacity");
 });
