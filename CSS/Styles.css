@@ -509,7 +509,7 @@ textarea {
 
 .contact-redesSociales {
   position: absolute;
-  bottom: 160px;
+  bottom: 15vh;
   left: calc(100% - 464px);
 }
 .contact-redesSociales-links {
