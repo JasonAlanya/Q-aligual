@@ -16,6 +16,8 @@
 }
 
 .Navbar {
+  max-width: 1440px;
+  margin: 0 auto;
   width: 100%;
   height: 20vh;
   display: flex;
@@ -24,6 +26,12 @@
   background: white;
   z-index: 10;
   -webkit-transition: height 1s;
+}
+
+@media (min-width: 1440px) {
+  .Navbar {
+    right: calc((100vw - 1440px) / 2);
+  }
 }
 
 .logo {
@@ -46,7 +54,7 @@
   margin: 0px 20px -15px;
   color: #49a8b5;
   font-family: "Roboto", sans-serif;
-  font-size: 0.7em;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -330,12 +338,33 @@
   width: 28%;
   height: 80vh;
   margin-top: 150px;
+  position: relative;
   /*position: absolute;
   top: 183px;
   left: 954px;*/
 }
 
-.help-modal,
+.help-modal {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(73, 168, 181, 1),
+    rgba(247, 192, 79, 1)
+  );
+}
+
+.help-modal div {
+  width: calc(100% - 10px);
+  height: calc(500px - 10px);
+  margin: 5px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .suscribe-modal {
   position: absolute;
   left: calc((100% - 386px) / 2);
@@ -348,7 +377,6 @@
     rgba(247, 192, 79, 1)
   );
 }
-.help-modal div,
 .suscribe-modal div {
   width: 376px;
   height: 494px;
