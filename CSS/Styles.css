@@ -392,9 +392,16 @@ textarea {
   font-style: normal;
   font-weight: bold;
   font-size: 1em;
-  color: black;
+  color: rgba(0, 0, 0, 0.53);
   cursor: pointer;
   margin-bottom: 0.5em;
+}
+
+.contact-info input[type="text"]:active,
+.help-form input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: 0;
 }
 
 .help-form input[type="radio"] {
