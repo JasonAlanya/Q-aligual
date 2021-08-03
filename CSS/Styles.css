@@ -57,6 +57,13 @@
   font-size: 18px;
   font-weight: bold;
 }
+.menu-nav img {
+  width: 21px;
+  height: 15px;
+  margin: 0 10px;
+  position: relative;
+  top: -10%;
+}
 
 .menu-nav a p {
   color: #f7c04f;
@@ -145,6 +152,8 @@
 
 .aboutus-text img {
   position: absolute;
+  width: 263px;
+  height: 271px;
 }
 
 .aboutus-text p {
@@ -216,13 +225,13 @@
 .service2 {
   display: flex;
   flex-direction: row;
-  height: 42%;
-  width: 65%;
+  max-width: 86%;
   margin: 1.5% 0;
   color: rgb(100, 100, 100);
 }
 
 .service1 {
+  height: 334px;
   border: 3px solid #49a8b5;
   border-left: 0;
   border-top-right-radius: 30px;
@@ -231,26 +240,28 @@
 
 .service1 div {
   padding-left: 2%;
-  padding-right: 2%;
 }
 
 .service1 img {
-  height: 90%;
-  padding: 1%;
+  height: 82%;
+  padding: 2.5%;
   margin-left: 2%;
 }
 
 .service1 div h1,
 .service2 div h1 {
-  font-size: 1em;
+  font-size: 24px;
   font-family: "Lora", arial;
   font-weight: bolder;
   margin: 2% 0 4%;
 }
+.service2 div h1 {
+  margin: 25px 0 4%;
+}
 
 .service1 div p,
 .service2 div p {
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: "Lora", arial;
   font-weight: lighter;
   word-spacing: em;
@@ -258,7 +269,8 @@
 }
 
 .service2 {
-  margin-left: 34.8%;
+  height: 281px;
+  margin-left: 15%;
   justify-content: right;
   border: 3px solid #f7c04f;
   border-right: 0;
@@ -266,9 +278,13 @@
   border-bottom-left-radius: 30px;
 }
 
+.service2 div {
+  padding-right: 3%;
+}
+
 .service2 img {
-  height: 90%;
-  padding: 1%;
+  height: 76%;
+  padding: 3%;
   margin-right: 2%;
 }
 
@@ -320,9 +336,6 @@
   width: 70%;
   height: 50%;
   margin-top: 100px;
-  /*position: absolute;
-  top: 266px;
-  left: 34px;*/
 }
 
 .help-questions p {
@@ -339,9 +352,6 @@
   height: 80vh;
   margin-top: 150px;
   position: relative;
-  /*position: absolute;
-  top: 183px;
-  left: 954px;*/
 }
 
 .help-modal {
